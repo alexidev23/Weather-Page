@@ -1,54 +1,86 @@
-# React + TypeScript + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para consultar el clima en tiempo real, creada con **Vite + React** para practicar el consumo de APIs.
 
-Currently, two official plugins are available:
+## 🔑 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite + React ⚡
+- TailwindCSS 💅
+- ShadCN (Dark Mode + Componentes) 🎨
+- React Lucide (Iconos) 🔥
+- API de Clima (OpenWeather) 🌐
 
-## Expanding the ESLint configuration
+## 🎯 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Consulta de clima por ciudad
+- Modo claro/oscuro con ShadCN
+- Diseño responsive
+- Carga de datos desde API externa
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ⚙️ Instalación
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/tuUsuario/weather-app.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instalar dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd weather-app
+npm install o pnpm install
 ```
+
+3. Agregar tu clave de API en el archivo `.env`
+
+```bash
+VITE_API_KEY=tu_api_key
+```
+
+4. Iniciar el servidor:
+
+```bash
+npm run dev o pnpm run dev
+```
+
+## 🎨 Modo Oscuro
+
+El modo oscuro está implementado usando **ShadCN** con el sistema de contextos de React.
+
+### Cómo funciona
+
+Se utiliza un Provider para compartir el estado del tema entre todos los componentes.
+
+```tsx
+import { ThemeProvider } from '@/components/theme-provider';
+
+<ThemeProvider defaultTheme="dark">
+  <App />
+</ThemeProvider>
+```
+
+## 📄 API Utilizada
+
+- [OpenWeather](https://openweathermap.org/) 🔗
+
+## 🔍 Posibles Mejoras
+
+- Integración de mapa con API (mostrar ubicación de la ciudad elegida)
+- Mejoras en la interfaz
+- Predicciones para los próximos días
+
+## 🎨 Diseño
+
+Así se ve la maqueta del diseño en Figma:
+
+## Autor
+
+**Alexis Escobar**
+
+🌐 [LinkedIn](https://www.linkedin.com/in/alexis-escobar-95b491184/) | 🐙 [GitHub](https://github.com/alexidev23)
+
+---
+
+💪 Proyecto creado con amor para practicar integración de APIs y tecnologías modernas.
+
