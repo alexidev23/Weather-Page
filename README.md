@@ -74,6 +74,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 
 Así se ve la maqueta del diseño en Figma:
 
+![mapa](./src/assets/design.png)
+
 ## Autor
 
 **Alexis Escobar**
