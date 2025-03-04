@@ -3,19 +3,21 @@ import { MapPin, Sun } from "lucide-react"
 function InfoClima () {
   return (
     <div className="w-[400px] px-6 py-4 bg-[#023b493f] rounded-lg flex justify-between">
-      <div>
-        <div className="flex items-center gap-1">
-          <MapPin size={22} />
-          <p className="font-bold text-3xl">Cordoba</p>
-        </div>
-        
-        <div className="font-light px-1 text-sm">
-          <span>Mon,</span><span>12:22hs</span>
+      <div className="flex flex-col justify-between">
+        <div>
+          <div className="flex items-center gap-1">
+            <MapPin size={22} />
+            <p className="font-bold text-3xl">Cordoba</p>
+          </div>
+          
+          <div className="font-light px-1 text-sm">
+            <span>Mon,</span><span>12:22hs</span>
+          </div>
         </div>
         
         <p className="text-7xl text-center font-semibold py-1">26°</p>
 
-        <div className="font-light text-sm">
+        <div className="flex font-light text-sm gap-2">
           <p>min: 1°</p>
           <p>max: 34°</p>
         </div>
