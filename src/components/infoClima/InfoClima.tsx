@@ -18,8 +18,8 @@ function InfoClima () {
         <p className="text-7xl text-center font-semibold py-1">26°</p>
 
         <div className="flex font-light text-sm gap-2">
-          <p>min: 1°</p>
-          <p>max: 34°</p>
+          <p className="text-blue-400 font-bold">min: 1°</p>
+          <p className="text-red-500 font-bold">max: 34°</p>
         </div>
       </div>
       <div>
