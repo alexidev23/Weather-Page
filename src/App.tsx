@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="border w-[1150px] m-auto flex justify-around">
+      <main className="w-[1150px] m-auto flex justify-around">
         <div className="flex flex-col">
           <InfoClima />
           <ClimaSemana />

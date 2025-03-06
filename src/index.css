@@ -122,3 +122,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+.scroll-clima::-webkit-scrollbar {
+  width: 4px; /* Ancho de la barra */
+}
+
+.scroll-clima::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Color del fondo de la barra */
+  border-radius: 10px; 
+}
+
+.scroll-clima::-webkit-scrollbar-thumb {
+  background: #aaaaaa; /* Color de la barra */
+  border-radius: 10px; 
+}
+
+.scroll-clima::-webkit-scrollbar-thumb:hover {
+  background: #9d9d9e; /* Color al hacer hover */
+}
